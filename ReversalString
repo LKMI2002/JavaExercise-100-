@@ -1,0 +1,26 @@
+import java.util.*;
+import java.lang.*;
+class RS {
+    String a;
+    char b;
+    Scanner input = new Scanner(System.in);
+
+    RS() {
+        System.out.println("请输入一串字符");
+        a = input.next();
+    }
+
+    void PRS() {
+        for (int c = a.length(); c >= 0; c--) {
+            b = a.charAt(c - 1);
+            System.out.print(b);
+        }
+    }
+}
+
+public class ReversalString {
+    public static void main(String args[]){
+        RS q=new RS();
+        q.PRS();
+    }
+}
